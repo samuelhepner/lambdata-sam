@@ -1,5 +1,5 @@
 """
-    A simple python lambdata
+    Utility functions for working with dataframes
 """
 
 import pandas as pd
