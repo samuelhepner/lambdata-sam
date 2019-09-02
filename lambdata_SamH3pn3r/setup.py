@@ -23,7 +23,7 @@ setuptools.setup(
     description="A collection of DS helper functions",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url="https://github.com/SamH3pn3r/lambdata-sam"
+    url="https://github.com/SamH3pn3r/lambdata-sam",
     packages=setuptools.findpackages(),
     python_requires=">=3.5",
     install_requires=REQUIRED,
