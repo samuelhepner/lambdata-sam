@@ -25,7 +25,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/SamH3pn3r/lambdata-sam"
     packages=setuptools.findpackages(),
-    python_requires">=3.5",
+    python_requires=">=3.5",
     install_requires=REQUIRED,
     classifiers=[
         "Programming Language :: Python :: 3",
