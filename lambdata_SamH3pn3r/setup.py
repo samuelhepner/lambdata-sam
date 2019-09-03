@@ -18,7 +18,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lambdata-sam",
-    version="0.0.1",
+    version="0.0.2",
     author="SamH3pn3r",
     description="A collection of DS helper functions",
     long_description=LONG_DESCRIPTION,
