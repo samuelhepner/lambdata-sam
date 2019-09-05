@@ -6,25 +6,20 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import numpy as np
 
-# Building a dictionary to then become a dataframe
-sales = {'Account': ['Jones LLC', 'Alpha Co', 'Blue Inc'],
-         'Jan': [150, 200, 30],
-         'Feb': [210, 300, 12],
-         'Mar': [50, 50, 10]}\
-
-# A dataframe built from the dictionary above
-df = pd.DataFrame.from_dict(sales)
-
 
 class cleanDf:
+    # Constructor
+    def __init__(self, df):
+        self.df = df
+
     # Finds the nulls and displays how many
     # there are in each column
-    def findNull(df):
-        null = df.isna().sum()
-        print(null)
+    def findNull(self, df, col):
+        null = df[col].isna().sum()
+        return null
 
     # Helps split your data up and you pick how
-    def split(df, train_size, test_size):
+    def split(self, df, train_size, test_size):
         train, validate, test = train_test_split(
                                                 df, 
                                                 train_size=train_size, 
